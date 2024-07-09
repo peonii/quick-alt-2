@@ -1,0 +1,19 @@
+[package]
+name = "quick-alt"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["quick-alt-macros"]
+
+[dependencies]
+anyhow = "1.0.76"
+dotenvy = "0.15.7"
+tokio = { version = "1.35.1", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+twilight-cache-inmemory = "0.15.4"
+twilight-gateway = "0.15.4"
+twilight-http = "0.15.4"
+twilight-model = "0.15.4"
+quick-alt-macros = { path = "quick-alt-macros" }
